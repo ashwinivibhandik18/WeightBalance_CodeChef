@@ -1,0 +1,12 @@
+#Weight Balance
+
+t=int(input())
+op=[]
+for i in range(t):
+    w1,w2,x1,x2,W=map(int,input().split())
+    if (w2-w1)>=x1*W and (w2-w1)<=x2*W:
+        op.append("1")
+    else:
+        op.append("0")
+for i in op:
+    print(i)
